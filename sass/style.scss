@@ -1,0 +1,61 @@
+html {
+    margin: 0;
+    
+}
+.container {
+    width: 260px;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+        width: 768px;
+    }
+    @media (min-width: 1280px) {
+       width: 1280px;
+   }
+}
+
+@import "blocks/slider-switch.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "blocks/page-header.scss";
+@import "blocks/about-programm.scss";
+@import "blocks/contacts.scss";
+@import "blocks/experts.scss";
+@import "blocks/feedback.scss";
+@import "blocks/feedback-popup.scss";
+@import "blocks/footer.scss";
+@import "blocks/main-content.scss";
+@import "blocks/main-info.scss";
+@import "blocks/members-last.scss";
+@import "blocks/partners.scss";
+@import "blocks/sponsors.scss";
+@import "blocks/place.scss";
+@import "blocks/form-popup.scss";
+@import "blocks/video-popup.scss";
+
+
+@import "global/fonts.scss";
+
+* {
+    box-sizing: border-box; 
+ }
+ 
+
+ 
+ .text-orange {
+     color: $font-color-orange;
+ }
+
+ .text-white {
+     color: $font-color-main;
+ }
+ 
+ .none {
+     display: none;
+ }
+
+
+ body {
+     width: 100vw;
+     margin: 0;
+     overflow-x:hidden;
+ }

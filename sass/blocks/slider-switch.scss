@@ -1,0 +1,51 @@
+.slider-switch {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    align-self: flex-start;
+}
+
+.slider-switch__item {
+    margin-right: 8px;
+}
+
+.slider-switch__button {
+    cursor: pointer;
+    outline: none;
+    background: #EBEBEB;
+    border-radius: 100%;
+    padding: 0;
+    width: 9px;
+    height: 9px;
+    border: none;
+}
+
+.slider-switch__button:hover {
+    background: rgba(255, 89, 22, 0.4);
+}
+
+.slider-switch__button:active {
+    background: rgba(255, 89, 22, 0.8);
+}
+
+
+.slider-switch__button--active {
+    background: #FF5916
+}
+
+.slider-switch__button--active:hover {
+    background: #FF5916
+}
+
+.slider-switch__button--active:active {
+    background: #FF5916
+}
+
+
+.slider-switch__button:nth-last-child(1) {
+    margin-right: 0px;
+}

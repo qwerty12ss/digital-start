@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Digital-start</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/picturefill.js"></script>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+    
+  </head>
+  <body>
+
+      <header class="page-header">
+        <div class="page-header__container container">
+          <div class="page-header__nav-wrapper">
+            <div class="page-hedaer__top-wrapper">
+                <a class="page-header__logo-link"><img class="page-header__logo" src="img/Header-logo.svg" width="125" height="35"></a>
+                <button class="page-header__burger">Открыть навигационное меню</button>
+                <button class="page-header__burger-close">закрыть</button>
+            </div>
+            <nav class="page-header__nav-menu">
+             <div class="page-header__nav-menu-wrapper">
+              <li class="page-header__nav-item"><a class="page-header__nav-link" href="#about-programm">Что это</a></li>
+              <li class="page-header__nav-item"><a class="page-header__nav-link" href="#experts">Эксперты</a></li>
+              <li class="page-header__nav-item"><a class="page-header__nav-link" href="#members-last">Участники</a></li>
+              <li class="page-header__nav-item"><a class="page-header__nav-link" href="#feedback">Отзывы</a></li>
+              <li class="page-header__nav-item"><a class="page-header__nav-link" href="#sponsors">Организаторы</a></li>
+              <li class="page-header__nav-item"><a class="page-header__nav-link" href="#contacts">Контакты</a></li>
+              <li class="page-header__nav-item page-header__nav-item--social">
+                <ul class="page-header__social-list">
+                  <li class="page-header__social page-header__social--insta"><a href="https://www.instagram.com/it_park/?hl=ru" target="_blank">Инстаграмм</a></li>
+                  <li class="page-header__social page-header__social--vk"><a href="https://vk.com/it_park" target="_blank">ВК</a></li>
+                </ul>
+              </li>  
+             </div>        
+            </nav>
+          </div>
+          <article class="main-info container">
+            <div class="main-info__wrapper-info">
+                <span class="main-info__date">
+                  1 октября - 6 апреля 2019 г.
+                </span>
+                <span class="main-info__place">
+                    <span class="mobile-hide">- </span><a href="https://itpark-kazan.ru/" target="_blank">IT Park Казань</a>
+                </span>
+            </div>
+            <h1 class="main-info__header">
+              Digital start
+            </h1>
+            <p class="main-info__desc">
+              Региональная программа развития компетенций цифрового предпринимательства
+            </p>
+            <a class="main-info__button" href="form.html">Подать заявку</a>
+          </article>
+          <div class="page-header__sponsors">
+              <span>Организаторы:</span>
+              <ul class="page-header__spоnsors-list">
+                <li class="page-header__spоnsors-item main-info__spоnsors-item--ITPark"><a href="https://itpark-kazan.ru/" target="_blank">IT Park Казань</a></li>
+                <li class="page-header__spоnsors-item main-info__spоnsors-item--Ministry"><a href="http://mic.tatarstan.ru/rus/" target="_blank">The Ministry of Informatio and Communication of the Republic of Tatarstan</a></li>
+              </ul>
+            </div>
+        </div>
+        
+      </header>
+      <main class="main-content">
+
+        <section class="about-programm container" id="about-programm">
+          <h2 class="about-programm__header">
+            О программе<span class="text-orange">.</span>
+          </h2>
+          <h3 class="about-programm__list-name">
+            Digital Start <span class="text-orange">- это:</span>
+          </h3>
+          <ul class="about-programm__desc">
+            <li class="about-programm__desc-item">
+              <span class="about-programm__desc-number">
+                #1
+              </span>
+              <p class="about-programm__desc-text">
+                Открытие лекции по сквозным технологиям
+              </p>
+            </li>
+            <li class="about-programm__desc-item">
+              <span class="about-programm__desc-number">
+                #2
+              </span>
+              <p class="about-programm__desc-text">
+                Обучение на платформе по технологическому предпринимательству
+              </p>
+            </li>
+            <li class="about-programm__desc-item">
+              <span class="about-programm__desc-number">
+                #3
+              </span>
+              <p class="about-programm__desc-text">
+                Создание своего проекта
+              </p>
+            </li>
+            <li class="about-programm__desc-item">
+              <span class="about-programm__desc-number">
+                #4
+              </span>
+              <p class="about-programm__desc-text">
+                Еженедельные встречи в ИТ-Парке PitchDay с куртаторами проекта
+              </p>
+            </li>
+            <li class="about-programm__desc-item">
+              <span class="about-programm__desc-number">
+                #5
+              </span>
+              <p class="about-programm__desc-text">
+                Обучение технологиям
+              </p>
+            </li>
+            <li class="about-programm__desc-item">
+              <span class="about-programm__desc-number">
+                #6
+              </span>
+              <p class="about-programm__desc-text">
+                Оффлайн прокачка проекта
+              </p>
+            </li>
+            <li class="about-programm__desc-item about-programm__desc-item--video">
+              <p class="about-programm__desc-text">
+                Форум для школьников и студентов Татарстана
+              </p>
+              <span class="about-programm__desc-videoname">
+                DemoDay
+              </span>
+              <button class="about-programm__desc-videolink" id="video-button">
+                Видео
+              </button>
+            </li>
+          </ul>
+        </section>   
+        <section class="experts container" id="experts">
+          <div class="experts__wrapper">
+            <h2 class="experts__header">
+              Эксперты<span class="text-orange">.</span>
+            </h2>
+            <div class="experts__btn-right-left-wrapper">
+              <button class="experts__btn-left"></button>
+              <button class="experts__btn-right"></button>
+            </div>
+            <div class="experts__slide-wrapper">
+              <ul class="experts__list">
+                <li class="experts__card experts__card--active">
+                  <img class="experts__img" src="img/experts1@1x.jpg" srcset="img/experts1@1x.jpg 1x, img/experts1@2x.jpg 2x">
+                  <h3 class="experts__name">
+                    Ярослав Шевцов
+                  </h3>
+                  <p class="experts__desc ">
+                    Партнер, ведущий эексперт в Digital Mission
+                  </p>
+                </li>
+                <li class="experts__card experts__card--active">
+                  <img class="experts__img" src="img/experts2@1x.jpg" srcset="img/experts2@1x.jpg 1x, img/experts2@2x.jpg 2x">
+                  <h3 class="experts__name">
+                    Илья Аксенов
+                  </h3>
+                  <p class="experts__desc">
+                    Совладелец агенства маркетинговых сервисов RiseMaker
+                  </p>
+                </li>
+                <li class="experts__card experts__card--active">
+                  <img class="experts__img" src="img/experts3@1x.jpg" srcset="img/experts3@1x.jpg 1x, img/experts3@2x.jpg 2x">
+                  <h3 class="experts__name">
+                    Василий Юзенчук
+                  </h3>
+                  <p class="experts__desc">
+                    Совладелец агенства маркетинговых сервисов RiseMaker
+                  </p>
+                </li>
+                <li class="experts__card experts__card--active">
+                  <img class="experts__img" src="img/experts4@1x.jpg" srcset="img/experts4@1x.jpg 1x, img/experts4@2x.jpg 2x">
+                  <h3 class="experts__name">
+                    Булат Ганиев
+                  </h3>
+                  <p class="experts__desc">
+                    Co-founder/ Partner в ИТ компании "Технократия"
+                  </p>
+                </li>
+                <li class="experts__card experts__card--active">
+                  <img class="experts__img" src="img/experts5@1x.jpg" srcset="img/experts5@1x.jpg 1x, img/experts5@2x.jpg 2x">
+                  <h3 class="experts__name">
+                    Дамир Галиев
+                  </h3>
+                  <p class="experts__desc">
+                    руководитель Проектного офиса инновационного развития "АК БАРС" Банка
+                  </p>
+                </li>
+              </ul>  
+            </div>
+            <ul class="slider-switch" id="slider-switch-experts">
+            </ul>
+          </div>
+        </section>     
+        <section class="members-last container" id="members-last">
+          <h2 class="members-last__header">
+            Участники прошлых лет<span class="text-orange">.</span>
+          </h2>
+          <div class="members-last__btn-right-left-wrapper">
+            <button class="members-last__btn-left"></button>
+            <button class="members-last__btn-right"></button>
+          </div>
+          <div class="member-last__slide-wrapper">
+            <ul class="members-last__img-list">
+              <li id="member-img">
+                <picture class="members-last__img">
+                  <source media="(min-width: 768px)" srcset="img/desktop-last1@1x.jpg 1x, img/desktop-last1@2x.jpg 2x">
+                  <img src="img/mobile-last1@1x.jpg" srcset="img/mobile-last1@1x.jpg 1x, img/mobile-last1@2x.jpg 2x">
+                </picture>
+              </li>
+              <li id="member-img">
+                  <picture class="members-last__img">
+                    <source media="(min-width: 768px)" srcset="img/desktop-last2@1x.jpg 1x, img/desktop-last2@2x.jpg 2x">
+                    <img src="img/mobile-last2@1x.jpg" srcset="img/mobile-last2@1x.jpg 1x, img/mobile-last2@2x.jpg 2x">
+                  </picture>
+              </li>
+              <li id="member-img">
+                  <picture class="members-last__img">  
+                    <source media="(min-width: 768px)" srcset="img/desktop-last3@1x.jpg 1x, img/desktop-last3@2x.jpg 2x">
+                    <img src="img/mobile-last3@1x.jpg" srcset="img/mobile-last3@1x.jpg 1x, img/mobile-last3@2x.jpg 2x">
+                  </picture>
+              </li>
+              <li id="member-img">
+                  <picture class="members-last__img">
+                    <source media="(min-width: 768px)" srcset="img/desktop-last4@1x.jpg 1x, img/desktop-last4@2x.jpg 2x">
+                    <img src="img/mobile-last4@1x.jpg" srcset="img/mobile-last4@2x.jpg 2x, img/mobile-last4@1x.jpg 1x">
+                  </picture>
+              </li>
+              <li id="member-img">
+                  <picture class="members-last__img">
+                    <source media="(min-width: 768px)" srcset="img/desktop-last5@1x.jpg 1x, img/desktop-last5@2x.jpg 2x">
+                    <img src="img/mobile-last5@1x.jpg" srcset="img/mobile-last5@1x.jpg 1x, img/mobile-last5@2x.jpg 2x">
+                  </picture>
+              </li>
+              <li id="member-img">
+                  <picture class="members-last__img">
+                    <source media="(min-width: 768px)" srcset="img/desktop-last6@1x.jpg 1x, img/desktop-last6@2x.jpg 2x">
+                    <img src="img/mobile-last6@1x.jpg" srcset="img/mobile-last6@1x.jpg 1x, img/mobile-last6@2x.jpg 2x">
+                  </picture>
+              </li>
+              <li id="member-img">
+                  <picture class="members-last__img">
+                    <source media="(min-width: 768px)" srcset="img/desktop-last7@1x.jpg 1x, img/desktop-last7@2x.jpg 2x">
+                    <img src="img/mobile-last7@2x.jpg" srcset="img/mobile-last7@1x.jpg 1x, img/mobile-last7@2x.jpg 2x">
+                  </picture>
+              </li>
+              <li id="member-img">
+                <picture class="members-last__img">
+                  <source media="(min-width: 768px)" srcset="img/desktop-last8@1x.jpg 1x, img/desktop-last8@2x.jpg 2x">
+                  <img src="img/mobile-last8@1x.jpg" srcset="img/mobile-last8@1x.jpg 1x, img/mobile-last8@2x.jpg 2x">
+                </picture>
+              </li>
+              <li id="mamber-img">
+                <picture class="members-last__img">
+                  <source media="(min-width: 768px)" srcset="img/desktop-last9@1x.jpg 1x, img/desktop-last9@2x.jpg 2x">
+                  <img src="img/mobile-last9@1x.jpg" srcset="img/mobile-last9@1x.jpg 1x, img/mobile-last9@2x.jpg 2x">
+                </picture>
+              </li>
+              <li id="member-img">
+                <picture class="members-last__img">
+                  <source media="(min-width: 768px)" srcset="img/desktop-last10@1x.jpg 1x, img/desktop-last10@2x.jpg 2x">
+                  <img src="img/mobile-last10@1x.jpg" srcset="img/mobile-last10@1x.jpg 1x, img/mobile-last10@2x.jpg 2x">
+                </picture>
+              </li>
+              <li id="member-img">
+                <picture class="members-last__img">
+                  <source media="(min-width: 768px)" srcset="img/desktop-last11@1x.jpg 1x, img/desktop-last11@2x.jpg 2x">
+                  <img src="img/mobile-last11@1x.jpg" srcset="img/mobile-last11@1x.jpg 1x, img/mobile-last11@2x.jpg 2x">
+                </picture>
+              </li>
+              <li id="member-img">
+                <picture class="members-last__img">
+                  <source media="(min-width: 768px)" srcset="img/desktop-last12@1x.jpg 1x, img/desktop-last12@2x.jpg 2x">
+                  <img src="img/mobile-last12@1x.jpg" srcset="img/mobile-last12@1x.jpg 1x, img/mobile-last12@2x.jpg 2x">
+                </picture>
+              </li>
+              <li id="member-img">
+                <picture class="members-last__img">
+                  <source media="(min-width: 768px)" srcset="img/desktop-last13@1x.jpg 1x, img/desktop-last13@2x.jpg 2x">
+                  <img src="img/mobile-last13@1x.jpg" srcset="img/mobile-last13@1x.jpg 1x, img/mobile-last13@2x.jpg 2x">
+                </picture>
+              </li>
+              <li id="member-img">
+                  <picture class="members-last__img">
+                    <source media="(min-width: 768px)" srcset="img/desktop-last14@1x.jpg 1x, img/desktop-last14@2x.jpg 2x">
+                    <img src="img/mobile-last14@1x.jpg" srcset="img/mobile-last14@1x.jpg 1x, img/mobile-last14@2x.jpg 2x">
+                  </picture>
+              </li>
+              <li id="member-img">
+                  <picture class="members-last__img">  
+                    <source media="(min-width: 768px)" srcset="img/desktop-last15@1x.jpg 1x, img/desktop-last15@2x.jpg 2x">
+                    <img src="img/mobile-last15@1x.jpg" srcset="img/mobile-last15@1x.jpg 1x, img/mobile-last15@2x.jpg 2x">
+                  </picture>
+              </li>
+              <li id="member-img">
+                  <picture class="members-last__img">
+                    <source media="(min-width: 768px)" srcset="img/desktop-last16@1x.jpg 1x, img/desktop-last16@2x.jpg 2x">
+                    <img src="img/mobile-last16@1x.jpg" srcset="img/mobile-last16@2x.jpg 2x, img/mobile-last16@1x.jpg 1x">
+                  </picture>
+              </li>
+              <li id="member-img">
+                  <picture class="members-last__img">
+                    <source media="(min-width: 768px)" srcset="img/desktop-last17@1x.jpg 1x, img/desktop-last17@2x.jpg 2x">
+                    <img src="img/mobile-last17@1x.jpg" srcset="img/mobile-last17@1x.jpg 1x, img/mobile-last17@2x.jpg 2x">
+                  </picture>
+              </li>
+              <li id="member-img">
+                  <picture class="members-last__img">
+                    <source media="(min-width: 768px)" srcset="img/desktop-last18@1x.jpg 1x, img/desktop-last18@2x.jpg 2x">
+                    <img src="img/mobile-last18@1x.jpg" srcset="img/mobile-last18@1x.jpg 1x, img/mobile-last18@2x.jpg 2x">
+                  </picture>
+              </li>
+              <li id="member-img">
+                  <picture class="members-last__img">
+                    <source media="(min-width: 768px)" srcset="img/desktop-last19@1x.jpg 1x, img/desktop-last19@2x.jpg 2x">
+                    <img src="img/mobile-last19@2x.jpg" srcset="img/mobile-last19@1x.jpg 1x, img/mobile-last19@2x.jpg 2x">
+                  </picture>
+              </li>
+              <li id="member-img">
+                <picture class="members-last__img">
+                  <source media="(min-width: 768px)" srcset="img/desktop-last20@1x.jpg 1x, img/desktop-last20@2x.jpg 2x">
+                  <img src="img/mobile-last20@1x.jpg" srcset="img/mobile-last20@1x.jpg 1x, img/mobile-last20@2x.jpg 2x">
+                </picture>
+              </li>
+              <li id="mamber-img">
+                <picture class="members-last__img">
+                  <source media="(min-width: 768px)" srcset="img/desktop-last21@1x.jpg 1x, img/desktop-last21@2x.jpg 2x">
+                  <img src="img/mobile-last21@1x.jpg" srcset="img/mobile-last21@1x.jpg 1x, img/mobile-last21@2x.jpg 2x">
+                </picture>
+              </li>
+              <li id="member-img">
+                <picture class="members-last__img">
+                  <source media="(min-width: 768px)" srcset="img/desktop-last22@1x.jpg 1x, img/desktop-last22@2x.jpg 2x">
+                  <img src="img/mobile-last22@1x.jpg" srcset="img/mobile-last22@1x.jpg 1x, img/mobile-last22@2x.jpg 2x">
+                </picture>
+              </li>
+              <li id="member-img">
+                <picture class="members-last__img">
+                  <source media="(min-width: 768px)" srcset="img/desktop-last23@1x.jpg 1x, img/desktop-last23@2x.jpg 2x">
+                  <img src="img/mobile-last23@1x.jpg" srcset="img/mobile-last23@1x.jpg 1x, img/mobile-last23@2x.jpg 2x">
+                </picture>
+              </li>
+              <li id="member-img">
+                <picture class="members-last__img">
+                  <source media="(min-width: 768px)" srcset="img/desktop-last24@1x.jpg 1x, img/desktop-last24@2x.jpg 2x">
+                  <img src="img/mobile-last24@1x.jpg" srcset="img/mobile-last24@1x.jpg 1x, img/mobile-last24@2x.jpg 2x">
+                </picture>
+              </li>
+              <li id="member-img">
+                <picture class="members-last__img">
+                  <source media="(min-width: 768px)" srcset="img/desktop-last25@1x.jpg 1x, img/desktop-last25@2x.jpg 2x">
+                  <img src="img/mobile-last25@1x.jpg" srcset="img/mobile-last25@1x.jpg 1x, img/mobile-last25@2x.jpg 2x">
+                </picture>
+              </li>
+              <li id="member-img">
+                  <picture class="members-last__img">
+                    <source media="(min-width: 768px)" srcset="img/desktop-last26@1x.jpg 1x, img/desktop-last26@2x.jpg 2x">
+                    <img src="img/mobile-last26@1x.jpg" srcset="img/mobile-last26@1x.jpg 1x, img/mobile-last26@2x.jpg 2x">
+                  </picture>
+              </li>
+              <li id="member-img">
+                  <picture class="members-last__img">  
+                    <source media="(min-width: 768px)" srcset="img/desktop-last27@1x.jpg 1x, img/desktop-last27@2x.jpg 2x">
+                    <img src="img/mobile-last27@1x.jpg" srcset="img/mobile-last27@1x.jpg 1x, img/mobile-last27@2x.jpg 2x">
+                  </picture>
+              </li>
+              <li id="member-img">
+                  <picture class="members-last__img">
+                    <source media="(min-width: 768px)" srcset="img/desktop-last28@1x.jpg 1x, img/desktop-last28@2x.jpg 2x">
+                    <img src="img/mobile-last28@1x.jpg" srcset="img/mobile-last28@2x.jpg 2x, img/mobile-last28@1x.jpg 1x">
+                  </picture>
+              </li>
+              <li id="member-img">
+                  <picture class="members-last__img">
+                    <source media="(min-width: 768px)" srcset="img/desktop-last29@1x.jpg 1x, img/desktop-last29@2x.jpg 2x">
+                    <img src="img/mobile-last29@1x.jpg" srcset="img/mobile-last29@1x.jpg 1x, img/mobile-last29@2x.jpg 2x">
+                  </picture>
+              </li>
+              <li id="member-img">
+                  <picture class="members-last__img">
+                    <source media="(min-width: 768px)" srcset="img/desktop-last30@1x.jpg 1x, img/desktop-last30@2x.jpg 2x">
+                    <img src="img/mobile-last30@1x.jpg" srcset="img/mobile-last30@1x.jpg 1x, img/mobile-last30@2x.jpg 2x">
+                  </picture>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="feedback" id="feedback">
+          <div class="feedback__container">
+            <h2 class="feedback__header">
+              Отзывы участников<span class="text-orange">.</span>
+            </h2>
+            <div class="feedback__btn-right-left-wrapper">
+              <button class="feedback__btn-left"></button>
+              <button class="feedback__btn-right"></button>
+            </div>
+            <div class="feedback__list-wrapper">
+              <ul class="feedback__list">
+                <li class="feedback__card feedback__card--active">
+                  <h3 class="feedback__name">Роман Шайхутдинов</h3>
+                  <img class="feedback__img" src="img/desktop-feedback1@1x.jpg" srcset="img/desktop-feedback1@1x.jpg 1x, img/desktop-feedback1@2x.jpg 2x">
+                  <span class="feedback__info">
+                    министр информатизации и связи РТ
+                  </span>
+                  <p class="feedback__desc-short">
+                    Сегодня на площадке ИТ-парка собрались люди с безграничными устремлениями, готовые создавать новое. Сегодняшний финал - это...
+                  </p>
+                  <button class="feedback__desc-btn"><span>Подробнее</span></button>
+                </li>
+                <li class="feedback__card feedback__card--active">
+                  <h3 class="feedback__name">Сайяр Сабиров</h3>
+                  <img class="feedback__img" src="img/desktop-feedback2@1x.jpg" srcset="img/desktop-feedback2@1x.jpg 1x, img/desktop-feedback2@2x.jpg 2x">
+                  <span class="feedback__info">
+                    руководитель бизнес-инкубатора ИТ-Парка
+                  </span>
+                  <p class="feedback__desc-short">
+                    Вот и завершился финал большого образовательного проекта. Сегодня нет проигравших, все ребята, которые приняли участие в конкурсе получили...
+                  </p>
+                  <button class="feedback__desc-btn"><span>Подробнее</span></button>
+                </li>
+                <li class="feedback__card feedback__card--active">
+                  <h3 class="feedback__name">Андрей Поминов</h3>
+                  <img class="feedback__img" src="img/desktop-feedback3@1x.jpg" srcset="img/desktop-feedback3@1x.jpg 1x, img/desktop-feedback3@2x.jpg 2x">
+                  <span class="feedback__info">
+                    первый заместитель министра образования и науки РТ
+                  </span>
+                  <p class="feedback__desc-short">
+                    Выразил благодарность Минсвязи РТ и ИТ-парку за создание условий для реализации столь масштабного проекта.
+                  </p>
+                  <button class="feedback__desc-btn"><span>Подробнее</span></button>
+                </li>
+                <li class="feedback__card">
+                  <h3 class="feedback__name">Гаврилова Асия, Бабыкина Влада</h3>
+                  <img class="feedback__img" src="img/desktop-feedback4@1x.jpg" srcset="img/desktop-feedback4@1x.jpg 1x, img/desktop-feedback4@2x.jpg 2x">
+                  <span class="feedback__info">
+                    39 школа 11Б класс
+                  </span>
+                  <p class="feedback__desc-short">
+                    Мы участвовали в программе "Digital Start" в 2018 году, разрабатывали проект под названием "Rozetka". Прошли очень интересный курс...
+                  </p>
+                  <button class="feedback__desc-btn"><span>Подробнее</span></button>
+                </li>              
+              </ul>
+            </div>
+            <ul class="slider-switch" id="slider-switch-feedback">
+            </ul>
+          </div>
+        </section>
+        <section class="partners container" >
+          <h2 class="partners__header">
+            Партнеры<span class="text-orange">.</span>
+          </h2>
+          <ul class="partners__list">
+            <li class="partners__item">
+              <a href="http://mon.tatarstan.ru/"  target="_blank">
+                <picture class="partners__img">
+                  <source media="(min-width: 768px)" srcset="img/desktop-partners-minobr@1x.png 1x, img/desktop-partners-minobr@2x.png 2x">
+                  <img src="img/mobile-partners-minobr@1x.png" srcset="img/mobile-partners-minobr@1x.png 1x, img/mobile-partners-minobr@2x.png 2x">
+                </picture>
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="https://1va.vc/"  target="_blank">
+                <picture class="partners__img">
+                  <source media="(min-width: 768px)" srcset="img/desktop-partners-vench-ac@1x.png 1x, img/desktop-partners-vench-ac@2x.png 2x">
+                  <img src="img/mobile-partners-vench-ac@1x.png" srcset="img/mobile-partners-vench-ac@1x.png 1x, img/mobile-partners-vench-ac@2x.png 2x">
+                </picture>
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="http://www.icl.ru/"  target="_blank">
+                <picture class="partners__img">
+                  <source media="(min-width: 768px)" srcset="img/desktop-partners-icl@1x.png 1x, img/desktop-partners-icl@2x.png 2x">
+                  <img src="img/mobile-partners-icl@1x.png" srcset="img/mobile-partners-icl@1x.png 1x, img/mobile-partners-icl@2x.png 2x">
+                </picture>
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="http://baytik-kazan.ru/"  target="_blank">
+                <picture class="partners__img">
+                  <source media="(min-width: 768px)" srcset="img/desktop-partners-byte@1x.png 1x, img/desktop-partners-byte@2x.png 2x">
+                  <img src="img/mobile-partners-byte@1x.png" srcset="img/mobile-partners-byte@1x.png 1x, img/mobile-partners-byte@2x.png 2x">
+                </picture>
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="https://vk.com/kzn.junior"  target="_blank">
+                <picture class="partners__img">
+                  <source media="(min-width: 768px)" srcset="img/desktop-partners-junior@1x.png 1x, img/desktop-partners-junior@2x.png 2x">
+                  <img src="img/mobile-partners-junior@1x.png" srcset="img/mobile-partners-junior@1x.png 1x, img/mobile-partners-junior@2x.png 2x">
+                </picture>
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="https://utalents.ru/"  target="_blank">
+                <picture class="partners__img">
+                  <source media="(min-width: 768px)" srcset="img/desktop-partners-talants@1x.png 1x, img/desktop-partners-talants@2x.png 2x">
+                  <img src="img/mobile-partners-talants@1x.png" srcset="img/mobile-partners-talants@1x.png 1x, img/mobile-partners-talants@2x.png 2x">
+                </picture>
+              </a>
+            </li>
+            
+            <li class="partners__item">
+              <a href="https://raccoon-group.ru/" target="_blank">
+                <picture class="partners__item">
+                  <source media="(min-width: 768px)" srcset="img/desktop-partners-raccoon@1x.png 1x, img/desktop-partners-raccoon@2x.png 2x">
+                  <img src="img/mobile-partners-raccoon@1x.png" srcset="img/mobile-partners-raccoon@1x.png 1x, img/mobile-partners-raccoon@2x.png 2x">
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="sponsors" id="sponsors">
+          <div class="sponsors__container">
+            <h2 class="sponsors__header">
+              Организаторы<span class="text-orange">.</span>
+            </h2>
+            <div class="sponsors__btn-right-left-wrapper">
+              <button class="sponsors__btn-left"></button>
+              <button class="sponsors__btn-right"></button>
+            </div>
+            <div class="sponsors__list-wrapper">
+              <ul class="sponsors__list">
+                <li class="sponsors__card sponsors__card--active">
+                   <div class="sponsors__wrapper-info">
+                     <h3 class="sponsors__name">
+                       IT Park, Казань
+                     </h3>
+                     <img class="sponsors__img" src="img/sponsors-img1@1x.jpg" srcset="img/sponsors-img1@1x.jpg 1x, img/sponsors-img1@2x.jpg 2x" width="265px" height="253px">
+                     <span class="sponsors__sub-info">
+                       оператор программы
+                     </span>
+                   </div>
+                   <div class="sponsors__text-wrapper">
+                     <p class="sponsors__short-desc">
+                         Технопарк в сфере высоких технологий «ИТ-парк» - это уникальная площадка для
+                         развития отрасли информационных и коммуникационных технологий                  
+                     </p>
+                     <p class="sponsors__desc">
+                         Технопарк является многофункциональном пространством, где техническая и бизнес-инфраструктура ИТ-парка в Казани и Набережных Челнах создает экосистему для комплексного развития и поддержания стартап-проектов и ИТ-компаний на всех стадиях: от идеи до внедрения конечного высокотехнологичного продукта на рынок.               
+                     </p>
+                    </div>
+                  <button class="sponsors-btn"><span>Подробнее</span></button>
+                </li>
+                <li class="sponsors__card sponsors__card--active">
+                    <div class="sponsors__wrapper-info">
+                      <h3 class="sponsors__name">
+                          Министерство информатизации и связи РТ 
+                      </h3>
+                      <img class="sponsors__img" src="img/sponsors-img1@1x.jpg" srcset="img/sponsors-img1@1x.jpg 1x, img/sponsors-img1@2x.jpg 2x" width="265px" height="253px">
+                      <span class="sponsors__sub-info">
+                          Министерство информатизации и связи РТ 
+                      </span>
+                    </div>
+                    <div class="sponsors__text-wrapper">
+                      <p class="sponsors__short-desc">
+                          Исполнительный орган государственной власти Республики Татарстан.
+                      </p>
+                      <p class="sponsors__desc">
+                          Является исполнительным органом государственной власти Республики Татарстан, проводящим государственную политику в сфере информатизации и связи; в пределах своей компетенции осуществляет взаимодействие с предприятиями,
+                          учреждениями и организациями независимо от их организационно-правовой формы и ведомственной принадлежности в установленной сфере деятельности.
+                      </p>
+                     </div>
+                   <button class="sponsors-btn"><span>Подробнее</span></button>
+                 </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <div class="main-bottom-wrapper">
+          <div class="main-bottom-wrapper1">
+          <section class="contacts container" id="contacts">
+            <h2 class="contacts__header">
+              Контакты<span class="text-white">.</span>
+            </h2>
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--adres">ул. Петербургская, 52, Казань</li>
+              <li class="contacts__item"><tel>+7 (843) 235-18-95</tel></li>
+              <li class="contacts__item"><a class="contacts__link" href="digitalstart@yandex.ru">digitalstart@yandex.ru</a></li>
+              <li>
+                <ul class="contacts__social-wrapper">
+                  <li class="contacts__social-item"><a class="contacts__link" href="https://www.instagram.com/it_park/?hl=ru" target="_blank">Instagram</a></li>
+                  <li class="contacts__social-item"><a class="contacts__link" href="https://vk.com/it_park" target="_blank">Вконтакте</a></li>
+                </ul>
+            </ul>
+            <a class="contacts__btn" href="form.html">Подать заявку</a>
+          </section>
+          <section class="place container">
+            <h2 class="place__header">
+              Место проведения<span class="text-orange">.</span>
+            </h2>
+            <div class="place__map" id="map">
+
+            </div>
+          </section>
+         </div>
+        </div>
+        <div class="form-popup__wrapper">
+          <form class="form-popup">
+              <button class="form-popup__close"></button>
+              <h2 class="form-popup__header">
+                  Введите данные
+              </h2>
+              <input class="form-popup__input-text" type="text" name="name" id="name" placeholder="Имя и фамилия">
+              <input class="form-popup__input-text" type="email" name="email" id="email" placeholder="Электронная почта">
+              <input class="form-popup__input-text" type="text" name="tel" id="tel" placeholder="Номер телефона">
+              <input class="form-popup__input-text" type="text" name="school" id="school" placeholder="Название учебного заведения">
+              <input class="form-popup__input-text" type="text" name="teacher" id="teacher" placeholder="ФИО учителя/куратора">
+              <input class="form-popup__submit" type="submit" value="Подать заявку">
+          </form>
+        </div>
+        <div class="feedback-popup">
+
+          <div class="feedback-popup__wrapper">
+              <button class="feedback-popup__close"></button>
+              <div class="feedback-popup__btn-right-left-wrapper">
+                <button class="feedback-popup__btn-left"></button>
+                <button class="feedback-popup__btn-right"></button>
+              </div>
+          <div class="feedback-popup__list-wrapper">
+            <ul class="feedback-popup__list">
+              <li class="feedback-popup__item feedback-popup__item--active">
+                <div class="feedback-popup__head-wrapper">
+                  <div class="feedback-popup__img-wrapper">
+                    <img class="feedback-popup__img" src="img/desktop-feedback1@1x.jpg" width="168" height="162" srcset="img/desktop-feedback1@1x.jpg 1x, img/desktop-feedback1@2x.jpg 2x">
+                  </div>
+                  <div class="feedback-popup__info-wrapper">
+                    <h3 class="feedback-popup__header">
+                      Роман Шайхутдинов
+                    </h3>
+                    <span class="feedback-popup__info">
+                      министр информатизации и связи РТ
+                    </span>
+                  </div>
+                </div>
+                <p class="feedback-popup__desc">
+                    “Сегодня на площадке ИТ-парка собрались люди с безграничными устремлениями, готовые создавать новое. Сегодняшний финал – это лишь начало большой программы. Благодаря проекту у вас есть возможность генерировать идеи, чтобы мы потом оказали вам поддержку в их воплощении в жизнь. Предпринимательство – это тоже творческая деятельность, но при этом приносящая прибыль,“ -  отметил Заместитель Премьер-министра Республики Татарстан - министр информатизации и связи РТ Роман Шайхутдинов.
+                </p>
+              </li>
+              <li class="feedback-popup__item">
+                <div class="feedback-popup__head-wrapper">
+                  <div class="feedback-popup__img-wrapper">
+                    <img class="feedback-popup__img" src="img/desktop-feedback2@1x.jpg" width="168" height="162" srcset="img/desktop-feedback2@1x.jpg 1x, img/desktop-feedback2@2x.jpg 2x">
+                  </div>
+                  <div class="feedback-popup__info-wrapper">
+                    <h3 class="feedback-popup__header">
+                      Сайяр Сабиров
+                    </h3>
+                    <span class="feedback-popup__info">
+                      руководитель бизнес-инкубатора ИТ-Парка
+                    </span>
+                  </div>
+                </div>
+                <p class="feedback-popup__desc">
+                  Вот и завершился финал большого образовательного проекта. Сегодня нет проигравших, все ребята, которые приняли участие в конкурсе получили бесценный опыт и навыки, в том числе в презентации своего проекта, в умении донести преимущества своего продукта до экспертов и инвесторов.
+                  Отличие нашего конкурса “Digital Start” от всех остальных - это то, что наша образовательная программа не завершается, ведь сегодня мы запускаем годовый образовательный цикл для школьников и студентов по технологическому предпринимательству, и готовы, в первую очередь, продолжить работу со всеми участниками этого конкурса.
+                  За то время, пока мы готовились с вами к финалу, мы видели вашу мотивацию и вашу готовность слушать и воспринимать все наши комментарии.
+                  Мы, в свою очередь, готовы вас поддержать своими компетенциями, чтобы из вашей идей вырос успешный стартап,” - подчеркнул руководитель бизнес-инкубатора ИТ-парка Сайяр Сабиров.
+                </p>
+              </li>
+              <li class="feedback-popup__item">
+                <div class="feedback-popup__head-wrapper">
+                  <div class="feedback-popup__img-wrapper">
+                    <img class="feedback-popup__img" src="img/desktop-feedback3@1x.jpg" width="168" height="162" srcset="img/desktop-feedback3@1x.jpg 1x, img/desktop-feedback3@2x.jpg 2x">
+                  </div>
+                  <div class="feedback-popup__info-wrapper">
+                    <h3 class="feedback-popup__header">
+                      Андрей Поминов
+                    </h3>
+                    <span class="feedback-popup__info">
+                      первый заместитель министра образования и науки РТ
+                    </span>
+                  </div>
+                </div>
+                <p class="feedback-popup__desc">
+                    Выразил благодарность Минсвязи РТ и ИТ-парку за создание условий для реализации столь масштабного образовательного проекта, а участникам конкурса пожелал успехов.
+                </p>
+              </li>
+              <li class="feedback-popup__item">
+                <div class="feedback-popup__head-wrapper">
+                  <div class="feedback-popup__img-wrapper">
+                    <img class="feedback-popup__img" src="img/desktop-feedback4@1x.jpg" width="168" height="162" srcset="img/desktop-feedback4@1x.jpg 1x, img/desktop-feedback4@2x.jpg 2x">
+                  </div>
+                  <div class="feedback-popup__info-wrapper">
+                    <h3 class="feedback-popup__header">
+                      Гаврилова Асия, Бабыкова Влада
+                    </h3>
+                    <span class="feedback-popup__info">
+                      39 школа 11Б класс
+                    </span>
+                  </div>
+                </div>
+                <p class="feedback-popup__desc">
+                    Мы участвовали в программе «Digital Start» в 2018 году, разрабатывали проект под названием «Rozetka». Прошли очень интересный курс, узнали очень много нового и в итоге получили свою собственную идею. В IT-парке посетили Бизнес-инкубатор, где познакомились с большим количеством классных людей, которые помогли нам развить идею и усовершенствовать наш проект! Мы очень рады, что приняли участие в такой масштабной и интересной программе. Спасибо всем организатором, это был действительно важный и нужный опыт.
+                </p>
+              </li>
+            </ul>
+            
+          </div>
+          <ul class="slider-switch" id="slider-switch-feedback-popup">
+            </ul>
+          </div>
+          </div>
+          <div class="video-popup">
+            <div class="video-popup__wrapper">
+            </div>
+          </div>
+      </main>
+      <footer class="footer container">
+        <a class="page-header__logo-link"><img class="footer__logo" src="img/footer-logo.svg" width="180" height="50"></a>
+        <a class="footer__link" href="#">Правила участия</a>
+        <a class="footer__link" href="#">Политика конфиденциальности</a>
+        <a class="footer__link footer__link--raccoon" href="https://raccoon-group.ru/" target="_blank">
+          <img class="footer__copyright" src="img/footer-copyright@1x.png" srcset="img/footer-copyright@1x.png 1x, img/footer-copyright@2x.png 2x">
+          Дизайн Raccoon Studio
+        </a>
+      </footer>
+      
+      <script  type="text/javascript" src="js/scripts.js"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?apikey=e0ecaa49-7a8b-4769-82af-6d1e1b495df5&lang=ru_RU" type="text/javascript"></script>
+      <script type="text/javascript">
+        ymaps.ready(init);
+
+        function init() {
+          var myMap = new ymaps.Map("map", {
+                center: [55.783388, 49.129825],
+                zoom: 15, 
+                controls: [],
+               searchControlProvider: 'yandex#search'
+        }),
+
+        myGeoObject = new ymaps.GeoObject({
+            geometry: {
+                type: "Point",
+                coordinates: [55.780424, 49.133627]
+            },
+        }, {
+            preset: 'islands#blackStretchyIcon',
+            draggable: true
+        });
+
+    myMap.geoObjects
+        .add(myGeoObject)
+}
+    </script>
+  </body>
+</html>

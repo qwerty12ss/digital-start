@@ -1,0 +1,287 @@
+.contacts {
+    width: 320px;
+    padding: 40px 30px 50px;
+    background: linear-gradient(151deg, #FF9368 4.17%, #FF5916 87.11%); 
+    margin: 0 auto;
+    
+    @media (min-width: 768px) {
+        position: relative;
+        z-index: 1000;
+        width: 400px;
+        background: url("../img/desktop-cont-bg-vector.png") center  -41px no-repeat, linear-gradient(151deg, #FF9368 4.17%, #FF5916 100%); 
+        background-size: cover;  
+        border-radius: 0px; 
+        padding: 20px 30px 20px 50px;
+        margin: 0;
+    }
+
+    @media (min-width: 1280px) {
+        position: absolute;
+        top:0;
+        z-index: 1000;
+        width: 519px;
+        background: url("../img/desktop-cont-bg-vector.png") center  -49px no-repeat, linear-gradient(140deg, #FF9368 4.17%, #FF5916 87%); 
+        background-size: cover;  
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0px 5px 56px rgba(0, 0, 0, 0.3);
+        padding: 55px 30px 80px;
+        margin: 0;
+        padding-left: 40px;
+    }
+    
+
+    &::after{
+        @media (min-width: 1280px) {
+            z-index: 0;
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            left: -40px;
+            top: -794.89px;
+            width: 1323px;
+            height: 807.89px;
+            background: url("../img/lenta.png") center no-repeat;    
+        }
+    }
+}
+
+.contacts__header {
+    @include font-family-pn ("PN-black", 32px, $font-color-second);
+        margin: 0;
+        margin-bottom: 45px;
+
+        @media (min-width: 768px) {
+            font-size: 64px;
+            margin-bottom: 85px;
+        }
+    
+        @media (min-width: 1280px) {
+            font-size: 64px;
+            margin-bottom: 85px;
+        }
+}
+
+.contacts__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    @media (min-width: 1280px) {
+        margin-bottom: 45px;
+    }
+}
+
+
+.contacts__item {
+    @include font-family-pn ("PN-semibold", 14px, $font-color-main);
+    padding-left: 80px;
+    height: 55px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (min-width: 768px) {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: 1280px) {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 54.5px;
+        height: 43px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+
+    &:nth-child(1)::after {
+        background-image: url("../img/cont-adress-icon.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &:nth-child(2)::after {
+        background-image: url("../img/cont-tel-icon.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &:nth-child(3)::after {
+        background-image: url("../img/cont-mail-icon.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.contacts__item tel {
+    @include font-family-pn ("PN-semibold", 18px, $font-color-main);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    padding-bottom: 4px;
+    text-decoration: none;
+
+    @media (min-width: 768px) {
+        font-size: 24px;
+    }
+
+    @media (min-width: 1280px) {
+        font-size: 24px;
+    }
+}
+
+.contacts__link {
+    @include font-family-pn ("PN-semibold", 16px, $font-color-main);
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+
+    @media (min-width: 768px) {
+        font-size: 24px;
+    }
+
+    @media (min-width: 1280px) {
+        font-size: 24px;
+    }
+}
+
+.contacts__link:hover {
+    opacity: 0.8;
+}
+
+.contacts__link:active {
+    opacity: 0.6;
+}
+
+.contacts__social-wrapper {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ 
+.contacts__social-item {
+    position: relative;
+    padding-left: 80px;
+    height: 55px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (min-width: 768px) {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: 1280px) {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 54.5px;
+        height: 43px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+
+    &:nth-child(1)::after {
+        background: url("../img/cont-insta-icon.svg") center no-repeat;
+    }
+
+    &:nth-child(2)::after {
+        background: url("../img/cont-vk-icon.svg") center no-repeat;
+    }
+}
+
+.contacts__btn {
+    outline: none;
+    display: block;
+    @include font-family-pn ("PN-bold", 18px, $font-color-second);
+    text-align: center;
+    text-decoration: none;
+    width: 260px;
+    padding: 20px 0;
+    background: white;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.1);
+    border-radius: 38px;
+    transition: 0.15s;
+    transition-timing-function: linear;
+    margin-bottom: 10px;
+
+    @media (min-width: 768px) {
+        width: 193px;
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: 1280px) {
+        width: 193px;
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        background: #2F2B6C;
+        color: $font-color-main;
+    }
+}
+
+.main-bottom-wrapper {
+    width: 100vw;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    @media (min-width: 768px) {
+        display: flex;
+        position: relative;
+        width: 768px;
+        margin-bottom: 25px;
+    }
+
+    @media (min-width: 1280px) {
+        display: block;
+        position: relative;
+        width: 100vw;
+        padding: 5px 30px 0px;
+        margin-bottom: 25px;
+        min-height: 875px;
+    }
+}
+
+.main-bottom-wrapper1 {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    @media (min-width: 768px) {
+        display: flex;
+        width: 768px;
+        margin-bottom: 25px;
+    }
+
+    @media (min-width: 1280px) {
+        display: block;
+        width: 1280px;
+        padding: 5px 50px 0px;
+        margin-bottom: 25px;
+        min-height: 875px;
+    }
+}
+

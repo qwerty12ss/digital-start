@@ -1,0 +1,266 @@
+.experts {
+    width: 100vw;
+    background: url("../img/mobile-experts-bg.png") top left no-repeat, rgb(247, 247, 247);
+
+    @media (min-width: 768px) {
+        width: 100vw;
+        background: url("../img/desktop-experts-bg.png")  center no-repeat, rgb(247, 247, 247);
+        background-size: cover;
+    }
+
+    @media (min-width: 1280px) {
+        width: 100vw;
+        background: url("../img/desktop-experts-bg.png")  center no-repeat, rgb(247, 247, 247);
+        background-size: cover;
+    }
+
+    @media (min-width: 1400px) {
+        width: 100vw;
+        background: url("../img/desktop-experts-bg.png")  center no-repeat, rgb(247, 247, 247);
+        background-size: cover;
+    }
+
+    
+}
+
+.experts__wrapper {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    padding: 25px 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media (min-width: 768px) {
+        width: 768px;
+        padding-top: 60px;
+        padding-right: 36px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+    }
+
+    @media (min-width: 1280px) {
+        width: 1280px;
+        padding-top: 70px;
+        padding-right: 10px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+    }
+
+    @media (min-width: 1400px) {
+        width: 1400px;
+        padding-top: 70px;
+        padding-right: 36px;
+        padding-bottom: 50px;
+        padding-left: 70px;
+    }
+}
+
+.experts__btn-right-left-wrapper {
+    position: absolute;
+    display: none;
+    justify-content: space-between;
+    width: 70px;
+    right: 50px;
+    bottom: 20px;
+
+    @media (min-width: 768px) {
+        display: flex;
+        right: 30px;
+        top: 91px;
+    }
+
+    @media (min-width: 1280px) {
+        right: 54px;
+        top: 91px;
+    }
+}
+
+.experts__btn-left {
+    cursor: pointer;
+    outline: none;
+    outline:none;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    border-right: 4px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+    transform: rotate(135deg);
+    &:hover {
+        border-color: #2F2B6C;;
+    }
+}
+
+.experts__btn-right {
+    cursor: pointer;
+    outline: none;
+    width: 20px;
+    outline:none;
+    height: 20px;
+    background: none;
+    border: none;
+    border-right: 4px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+    transform: rotate(-45deg);
+    &:hover {
+        border-color: #2F2B6C;;
+    }
+}
+
+.experts__header {
+    @include font-family-pn ("PN-black", 32px, $font-color-second);
+    margin: 0;
+    margin-bottom: 45px;
+
+    @media (min-width: 768px) {
+        font-size: 64px;
+    }
+
+    @media (min-width: 1280px) {
+        font-size: 64px;
+        padding-left: 60px;
+    }
+}
+
+.experts__list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    width: 1760px;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 78px;
+        width: 2040px;
+    }
+
+    @media (min-width: 1280px) {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 78px;
+        width: 2040px;
+    }
+}
+
+.experts__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    width: 274px !important;
+    margin-right: 40px;
+    
+
+    @media (min-width: 768px) {
+        width: 294px;
+        display: flex;
+        margin-right: 60px;
+        left: -0px;
+    }
+
+    @media (min-width: 1280px) {
+        width: 294px;
+        display: flex; 
+        margin-right: 30px;  
+    }
+
+    @media (min-width: 1400px) {
+        width: 294px;
+        display: flex;   
+        margin-right: 60px;
+    }
+}
+
+.experts__card:nth-last-child(1) {
+        margin-right: 0;
+        @media (min-width: 768px) {
+            margin-right: 0;
+        }
+    
+        @media (min-width: 1280px) {
+            margin-right: 0;
+        }
+    
+        @media (min-width: 1400px) {
+            margin-right: 0;
+        }
+}
+
+.experts__img {
+    position: relative;
+    z-index: 0;
+    width: 256px;
+    height: 252px;
+    margin: 0;
+}
+
+.experts__name {
+    @include font-family-pn ("PN-extrabold", 20px, $font-color-main);
+    width: 195px;
+    height: 35px;
+    line-height: 27px;
+    padding: 4px 5px;
+    background: rgba(255, 89, 22, 1);
+    box-shadow: 0px 7px 18px rgba(255, 89, 22, 0.3);
+    text-align: center;
+    vertical-align: center;
+    margin: 0;
+    position: absolute;
+    z-index: 2000;
+    top: 200px;
+    left: 0px;
+}
+
+.experts__desc {
+    position: relative;
+    z-index: 1000;
+    width: 240px;
+    padding: 18px 30px;
+    margin: -30px 0px 0 0;
+    @include font-family-pn ("PN-regular", 14px, $font-color-gray);
+    background: rgb(226, 226, 226);
+    left: -20px;
+
+    @media (min-width: 768px) {
+        margin: -30px 20px 0 0;
+        left: 0px;
+    }
+
+    @media (min-width: 1280px) {
+        margin: -30px 20px 0 0;
+    }
+}
+
+.experts__slide-wrapper {
+    overflow: hidden;
+    width: 290px;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+        width: 628px;
+    }
+
+    @media (min-width: 1280px) {
+        width: 1210px;
+    }
+
+    @media (min-width: 1400px) {
+        width: 1316px;
+    }
+}
